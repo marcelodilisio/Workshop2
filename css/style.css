@@ -1,0 +1,865 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Karla:400,600,700|Source+Sans+Pro:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.sitio {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+header {
+  text-align: center; }
+  header form {
+    float: left;
+    width: 33%;
+    display: inline-block; }
+    header form .search {
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin-top: 60px;
+      font-family: "Karla", sans-serif; }
+      header form .search span {
+        font-size: 18px; }
+      header form .search input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        border: none;
+        letter-spacing: 1px;
+        font-family: "Karla", sans-serif;
+        margin-left: 18px; }
+      header form .search input::-webkit-input-placeholder {
+        color: black; }
+  header .imagen {
+    width: 33%;
+    display: inline-block; }
+    header .imagen img {
+      max-width: 140px;
+      display: inline-block;
+      margin-top: 35px; }
+  header .items {
+    width: 33%;
+    display: inline-block;
+    float: right;
+    margin-top: 55px; }
+    header .items span {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: black;
+      display: inline-block; }
+    header .items p {
+      font-family: "Karla", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: black;
+      display: inline-block;
+      padding: 0 5px;
+      letter-spacing: 1px; }
+    header .items a {
+      font-family: "Karla", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      padding: 5px 8px;
+      margin-left: 10px;
+      letter-spacing: 1px; }
+  header .trio {
+    display: none;
+    text-align: center; }
+    header .trio ul li {
+      display: inline-block;
+      clear: both;
+      color: #2d3647;
+      font-size: 40px;
+      margin-right: 50px; }
+    header .trio ul li:last-child {
+      margin-right: 0; }
+  header nav {
+    padding-top: 40px; }
+    header nav ul li {
+      display: inline-block;
+      padding: 0 30px; }
+      header nav ul li .ion-chevron-down {
+        padding-left: 10px;
+        font-size: 11px; }
+      header nav ul li a {
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: black; }
+  header hr {
+    margin: 50px 0 40px 0; }
+
+aside {
+  float: left;
+  max-width: 18%; }
+  aside h3 {
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a5a5a5;
+    padding-bottom: 15px; }
+  aside ul li ul li {
+    padding: 12px 0 12px 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px; }
+    aside ul li ul li .ion-chevron-right {
+      padding-left: 10px;
+      font-size: 10px; }
+    aside ul li ul li a {
+      text-decoration: none;
+      color: black; }
+    aside ul li ul li.genero {
+      font-family: "Karla", sans-serif;
+      font-weight: 700;
+      color: #4e9cb3;
+      padding-left: 0px; }
+    aside ul li ul li.lookbook {
+      font-weight: 700;
+      padding-left: 0px; }
+
+.contenido {
+  float: right;
+  width: 80%; }
+
+.section1 {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 45px; }
+  .section1 img {
+    width: 100%; }
+  .section1 .circulo1 {
+    position: absolute;
+    top: 45%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    color: white;
+    margin-left: 15px; }
+    .section1 .circulo1 .ion-chevron-left {
+      position: absolute;
+      font-size: 15px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .section1 .titulo {
+    position: absolute;
+    top: 140px;
+    left: 110px;
+    display: inline-block; }
+    .section1 .titulo h4 {
+      font-family: "Karla", sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 9px #999; }
+    .section1 .titulo h1 {
+      font-family: "Crimson Text", serif;
+      font-size: 58px;
+      letter-spacing: 2px;
+      color: white;
+      padding: 25px 0;
+      font-weight: 700;
+      text-shadow: 2px 2px 9px #999; }
+  .section1 .circulo2 {
+    position: absolute;
+    top: 45%;
+    left: 94%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    color: white;
+    margin: auto; }
+    .section1 .circulo2 .ion-chevron-right {
+      position: absolute;
+      font-size: 15px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.section2 article {
+  margin-bottom: 50px;
+  display: inline-block;
+  width: 48.5%;
+  position: relative; }
+  .section2 article h1 {
+    font-family: "Crimson Text", serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 30px;
+    position: absolute;
+    top: 80px;
+    left: 0; }
+  .section2 article a {
+    font-family: "Karla", sans-serif;
+    position: absolute;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    top: 145px;
+    left: 0; }
+  .section2 article.classics {
+    float: left; }
+  .section2 article.popular {
+    float: right; }
+  .section2 article img {
+    width: 100%; }
+
+.section3 {
+  clear: both; }
+  .section3 .titulo_s3 {
+    font-family: "Karla", sans-serif;
+    color: #d5d5d5;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 25px; }
+  .section3 li {
+    display: inline-block;
+    width: 23%;
+    margin: 25px 21px 0 0; }
+    .section3 li img {
+      margin: 3px 0;
+      width: 100%; }
+    .section3 li h1 {
+      color: #4e9cb3;
+      font-family: "Karla", sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+      padding-top: 20px; }
+    .section3 li h2 {
+      text-align: center;
+      color: black;
+      font-family: "Crimson Text", serif;
+      padding-top: 18px;
+      font-size: 16px;
+      font-weight: bold; }
+    .section3 li p {
+      color: #8e8e8e;
+      text-transform: uppercase;
+      text-align-last: center;
+      font-family: "Source Sans Pro", sans-serif;
+      padding-top: 18px; }
+  .section3 li:last-child {
+    margin-right: 0px; }
+
+.section4 {
+  margin: 70px 0 40px 0; }
+  .section4 .texto_s4 {
+    width: 48%;
+    float: left; }
+    .section4 .texto_s4 h2 {
+      font-family: "Crimson Text", serif;
+      font-size: 28px;
+      font-weight: bold; }
+    .section4 .texto_s4 p {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #8e8e8e;
+      line-height: 26px;
+      padding: 20px 0; }
+  .section4 .img_s4 {
+    width: 48%;
+    float: right; }
+    .section4 .img_s4 img {
+      width: 100%; }
+  .section4 .padre_s4 {
+    overflow: auto; }
+
+.section5 {
+  clear: both;
+  position: relative;
+  max-width: 100%;
+  margin: 40px 0 50px 0; }
+  .section5 img {
+    width: 100%; }
+  .section5 .titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .section5 .titulo h4 {
+      font-family: "Karla", sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 9px #999; }
+    .section5 .titulo h1 {
+      font-family: "Crimson Text", serif;
+      font-size: 50px;
+      letter-spacing: 2px;
+      color: white;
+      padding: 25px 0;
+      font-weight: 700;
+      text-shadow: 2px 2px 9px #999; }
+
+.section6 h2 {
+  font-family: "Karla", sans-serif;
+  color: #d5d5d5;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 25px; }
+.section6 li {
+  display: inline-block;
+  width: 31%;
+  margin-right: 27px; }
+  .section6 li h1 {
+    text-align: left;
+    color: black;
+    font-family: "Crimson Text", serif;
+    margin: 25px 0;
+    font-size: 20px;
+    font-weight: bold; }
+  .section6 li img {
+    width: 100%; }
+  .section6 li p {
+    text-align-last: left;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 25px 0;
+    line-height: 26px;
+    color: #646566; }
+  .section6 li a {
+    color: #4e9cb3;
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-decoration: none; }
+.section6 li:last-child {
+  margin-right: 0; }
+
+.section7 {
+  max-width: 100%;
+  margin: 50px 0; }
+  .section7 h2 {
+    font-family: "Karla", sans-serif;
+    color: #d5d5d5;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 30px 0 40px 0; }
+  .section7 .img_grande {
+    margin-bottom: 50px; }
+    .section7 .img_grande li {
+      display: inline-block;
+      width: 31%;
+      margin-right: 27px; }
+      .section7 .img_grande li div {
+        position: relative; }
+        .section7 .img_grande li div img {
+          width: 100%; }
+        .section7 .img_grande li div p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: left;
+          color: white;
+          font-family: "Crimson Text", serif;
+          font-size: 21px;
+          font-weight: 600;
+          text-shadow: 2px 2px 9px #999; }
+    .section7 .img_grande li:last-child {
+      margin-right: 0; }
+  .section7 .img_chico li {
+    display: inline-block;
+    width: 31%;
+    margin-right: 27px; }
+    .section7 .img_chico li div {
+      position: relative; }
+      .section7 .img_chico li div img {
+        width: 100%; }
+      .section7 .img_chico li div div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .section7 .img_chico li div div p {
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          font-family: "Karla", sans-serif;
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-weight: 400; }
+        .section7 .img_chico li div div h1 {
+          text-transform: uppercase;
+          color: white;
+          text-align: center;
+          font-family: "Crimson Text", serif;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 67px; }
+  .section7 .img_chico li:last-child {
+    margin-right: 0; }
+
+footer {
+  clear: both;
+  width: 100%; }
+  footer .abajo {
+    display: none; }
+  footer .hr2 {
+    display: none; }
+  footer .menu_footer {
+    display: inline-block;
+    width: 16%;
+    margin-top: 40px;
+    float: left; }
+    footer .menu_footer h3 {
+      font-family: "Karla", sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #000;
+      padding-bottom: 15px; }
+    footer .menu_footer ul {
+      margin-bottom: 50px; }
+      footer .menu_footer ul li {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 14px;
+        padding-bottom: 25px; }
+      footer .menu_footer ul a {
+        text-decoration: none;
+        color: #666; }
+  footer .twitter {
+    display: inline-block;
+    width: 33%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px; }
+    footer .twitter h3 {
+      font-family: "Karla", sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #000;
+      padding-bottom: 15px; }
+    footer .twitter ul {
+      margin-bottom: 50px; }
+      footer .twitter ul li {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 14px;
+        padding-bottom: 25px; }
+      footer .twitter ul a {
+        text-decoration: none;
+        color: #666; }
+    footer .twitter .head_twitter {
+      width: 95%;
+      overflow: hidden; }
+      footer .twitter .head_twitter img {
+        float: left;
+        width: 12%;
+        margin: 0 13px 10px 0; }
+      footer .twitter .head_twitter .pixel {
+        display: inline-block;
+        width: 80%; }
+        footer .twitter .head_twitter .pixel h2 {
+          font-family: "Crimson Text", serif;
+          font-size: 20px;
+          font-weight: 700; }
+        footer .twitter .head_twitter .pixel p span {
+          font-family: "Karla", sans-serif;
+          color: #4e9cb3;
+          font-size: 14px; }
+      footer .twitter .head_twitter .sol {
+        clear: left;
+        font-family: "Karla", sans-serif;
+        color: #666;
+        font-size: 14px; }
+        footer .twitter .head_twitter .sol span {
+          color: #4e9cb3; }
+      footer .twitter .head_twitter a {
+        font-family: "Karla", sans-serif;
+        font-size: 14px;
+        color: #4e9cb3;
+        text-decoration: none; }
+      footer .twitter .head_twitter h3 {
+        font-family: "Karla", sans-serif;
+        color: #ccc;
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding-top: 20px; }
+  footer .news_redes {
+    display: inline-block;
+    width: 33%;
+    float: left;
+    margin-top: 40px; }
+    footer .news_redes h3 {
+      font-family: "Karla", sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #000;
+      padding-bottom: 15px; }
+    footer .news_redes ul {
+      margin-bottom: 50px; }
+      footer .news_redes ul li {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 14px;
+        padding-bottom: 25px; }
+      footer .news_redes ul a {
+        text-decoration: none;
+        color: #666; }
+    footer .news_redes .connect {
+      margin-top: 35px; }
+  footer .mail {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden; }
+    footer .mail input {
+      float: left;
+      width: 70%;
+      top: 0;
+      left: 0;
+      font-size: 13px;
+      border: none;
+      font-family: "Karla", sans-serif;
+      padding: 12px 20px; }
+    footer .mail input::-webkit-input-placeholder {
+      color: #ccc; }
+    footer .mail span {
+      float: right;
+      color: #e5e5e5;
+      font-size: 30px;
+      padding: 5px 10px; }
+  footer .connect {
+    clear: left; }
+    footer .connect span {
+      color: #3b4859;
+      font-size: 35px;
+      padding-right: 15px; }
+  footer .copy {
+    clear: left; }
+    footer .copy p {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px;
+      color: #ccc;
+      padding: 35px 0 10px 0; }
+
+@media screen and (max-width: 360px) {
+  .sitio {
+    margin: 0 auto;
+    max-width: 350px; }
+
+  header {
+    text-align: center; }
+    header form {
+      display: none; }
+    header img {
+      max-width: 120px;
+      display: inline-block;
+      margin-top: 25px; }
+    header .items {
+      display: none; }
+    header .trio {
+      display: inline;
+      text-align: center; }
+      header .trio ul {
+        margin-top: 27px; }
+        header .trio ul li {
+          font-size: 27px; }
+    header nav {
+      display: none; }
+    header hr {
+      width: 95%; }
+
+  .arriba {
+    display: none; }
+
+  .contenido {
+    float: none;
+    width: 95%;
+    margin: 0 auto; }
+
+  .section1 .circulo1 {
+    top: 23%;
+    width: 35px;
+    height: 35px; }
+  .section1 .titulo {
+    position: static;
+    text-align: center;
+    display: inline; }
+    .section1 .titulo h4 {
+      font-size: 11px;
+      color: #000;
+      text-shadow: none;
+      padding-top: 20px; }
+      .section1 .titulo h4.by {
+        padding-top: 0px; }
+    .section1 .titulo h1 {
+      font-size: 22px;
+      letter-spacing: 0px;
+      color: #000;
+      padding: 15px 0;
+      text-shadow: none; }
+  .section1 .circulo2 {
+    top: 23%;
+    left: 85%;
+    width: 35px;
+    height: 35px; }
+
+  .section2 article {
+    margin-bottom: 50px;
+    display: inline;
+    width: 100%; }
+    .section2 article h1 {
+      font-size: 24px;
+      padding-left: 40px;
+      top: 57px; }
+    .section2 article a {
+      font-size: 13px;
+      padding-left: 40px;
+      top: 100px; }
+
+  .section3 {
+    clear: both; }
+    .section3 .titulo_s3 {
+      font-size: 15px; }
+    .section3 li {
+      display: inline-block;
+      width: 100%;
+      margin: 35px 0px 0 0; }
+      .section3 li img {
+        margin: 3px 0;
+        width: 100%; }
+      .section3 li h1 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding-top: 20px; }
+      .section3 li p {
+        font-size: 15px; }
+    .section3 li:first-child {
+      margin-top: 10px; }
+
+  .section4 {
+    margin: 50px 0 40px 0; }
+    .section4 .texto_s4 {
+      width: 100%;
+      float: none; }
+      .section4 .texto_s4 h2 {
+        font-size: 23px; }
+      .section4 .texto_s4 p {
+        line-height: 23px;
+        font-size: 14px; }
+    .section4 .img_s4 {
+      width: 100%;
+      float: none; }
+
+  .section5 img {
+    width: 100%; }
+  .section5 .titulo h4 {
+    font-size: 13px; }
+  .section5 .titulo h1 {
+    font-size: 24px;
+    padding: 15px 0; }
+
+  .section6 h2 {
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .section6 li {
+    display: inline-block;
+    width: 100%;
+    margin-right: 27px; }
+    .section6 li h1 {
+      margin: 30px 0 20px 0; }
+    .section6 li p {
+      margin: 20px 0;
+      line-height: 23px;
+      font-size: 14px; }
+    .section6 li a {
+      font-size: 13px;
+      letter-spacing: 1px; }
+  .section6 li:last-child {
+    margin-right: 0; }
+
+  .section7 {
+    max-width: 100%; }
+    .section7 .img_grande {
+      margin-bottom: 20px; }
+      .section7 .img_grande li {
+        width: 100%;
+        margin-bottom: 25px; }
+      .section7 .img_grande li:last-child {
+        margin-right: 0; }
+    .section7 .img_chico li {
+      width: 100%;
+      margin-bottom: 20px; }
+      .section7 .img_chico li div {
+        position: relative; }
+        .section7 .img_chico li div img {
+          width: 100%; }
+        .section7 .img_chico li div div p {
+          font-size: 12px; }
+    .section7 .img_chico li:last-child {
+      margin-right: 0; }
+
+  footer {
+    clear: both;
+    width: 100%; }
+    footer .abajo {
+      display: inline;
+      float: none;
+      max-width: 100%;
+      text-align: center; }
+      footer .abajo h3 {
+        font-family: "Karla", sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #a5a5a5;
+        padding-bottom: 15px;
+        margin-top: 40px; }
+      footer .abajo ul li ul li {
+        padding: 12px 0 12px 12px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 13px; }
+        footer .abajo ul li ul li .ion-plus {
+          padding-left: 7px;
+          font-size: 9px;
+          font-weight: 700; }
+        footer .abajo ul li ul li a {
+          text-decoration: none;
+          color: black; }
+        footer .abajo ul li ul li.genero {
+          font-family: "Karla", sans-serif;
+          font-weight: 300;
+          color: #000;
+          padding-left: 0px; }
+        footer .abajo ul li ul li.lookbook {
+          font-weight: 300;
+          padding-left: 0px;
+          margin-bottom: 30px; }
+    footer .menu_footer {
+      display: inline-block;
+      width: 100%;
+      margin-top: 40px;
+      float: none;
+      text-align: center; }
+      footer .menu_footer h3 {
+        font-size: 13px;
+        color: #000;
+        font-weight: 700; }
+      footer .menu_footer ul {
+        margin-bottom: 0px; }
+        footer .menu_footer ul li {
+          font-size: 13px; }
+    footer .twitter {
+      display: inline;
+      width: 100%;
+      float: none;
+      margin-top: 10px;
+      margin-left: 0px;
+      text-align: center; }
+      footer .twitter h3 {
+        padding-top: 0px;
+        font-weight: 700;
+        font-size: 13px; }
+      footer .twitter .head_twitter img {
+        float: none;
+        width: 15%;
+        margin: 0 0px 10px 0; }
+      footer .twitter .head_twitter .pixel {
+        display: inline-block;
+        width: 95%; }
+        footer .twitter .head_twitter .pixel h2 {
+          font-family: "Crimson Text", serif;
+          font-size: 20px;
+          font-weight: 700; }
+        footer .twitter .head_twitter .pixel p span {
+          font-family: "Karla", sans-serif;
+          color: #4e9cb3;
+          font-size: 14px; }
+      footer .twitter .head_twitter .sol {
+        font-size: 13px;
+        padding: 15px 0 10px 0; }
+        footer .twitter .head_twitter .sol span {
+          color: #4e9cb3; }
+      footer .twitter .head_twitter h3 {
+        font-size: 12px; }
+    footer .news_redes {
+      width: 100%;
+      float: none;
+      margin-top: 40px;
+      text-align: center;
+      margin-bottom: 30px; }
+      footer .news_redes h3 {
+        padding-top: 0px;
+        font-weight: 700;
+        font-size: 13px; }
+      footer .news_redes .connect {
+        margin-top: 35px; }
+    footer .mail {
+      width: 95%; }
+    footer .connect span {
+      font-size: 25px; }
+    footer .copy {
+      clear: left;
+      text-align: center; }
+      footer .copy p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 14px;
+        color: #ccc;
+        padding: 35px 0 10px 0; } }
+
+/*# sourceMappingURL=style.css.map */

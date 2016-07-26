@@ -1,0 +1,153 @@
+@mixin productos($celeste,$subtitulo,$titulo){
+	display: inline-block;
+	width: 23%;
+	margin: 25px 21px 0 0;
+	img {
+		margin: 3px 0;
+		width: 100%;
+	}
+	h1 {
+		color: $celeste;
+		font-family: $subtitulo;
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 2px;
+		text-align: center;
+		padding-top: 20px;
+	}
+	h2{
+		text-align: center;
+		color: black;
+		font-family: $titulo;
+		padding-top: 18px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	p{
+		color: #8e8e8e;
+		text-transform: uppercase;
+		text-align-last: center;
+		font-family: $texto;
+		padding-top: 18px;
+	}
+}
+
+@mixin news($celeste,$titulo,$texto){
+	display: inline-block;
+	width: 31%;
+	margin-right: 27px;
+	h1 {
+		text-align: left;
+		color: black;
+		font-family: $titulo;
+		margin: 25px 0;
+		font-size: 20px;
+		font-weight: bold;	
+	}
+	img {
+		width: 100%;
+	}
+	p {
+		text-align-last: left;
+		font-family: $texto;
+		margin: 25px 0;
+		line-height: 26px;
+		color:#646566;
+	}
+	a {
+		color: $celeste;
+		font-family: $subtitulo;
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 2px;
+		text-align: left;
+		text-decoration: none;
+	}
+}
+
+@mixin imagen_grande($titulo,$color) {
+	li {
+		display: inline-block;
+		width: 31%;
+		margin-right: 27px;
+		div {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			p {
+				position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%,-50%);
+				text-align: left;
+				color: $color;
+				font-family: $titulo;
+				font-size: 21px;
+				font-weight: 600;
+				text-shadow: 2px 2px 9px #999;
+			}
+		}
+	}
+}
+
+@mixin imagen_chico($subtitulo,$texto,$color) {
+	li {
+		display: inline-block;
+		width: 31%;
+		margin-right: 27px;
+		div {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			div {
+				position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%,-50%);
+				p {
+					text-transform: uppercase;
+					text-align: center;
+					color: $color;
+					font-family: $subtitulo;
+					font-size: 14px;
+					letter-spacing: 2px;
+					font-weight: 400;
+				}
+				h1 {
+					text-transform: uppercase;
+					color:$color;
+					text-align: center;
+					font-family: $titulo;
+					font-size: 26px;
+					font-weight: 600;
+					line-height: 67px;
+				}
+			}
+		}
+	}
+}
+
+@mixin menu_footer($subtitulo,$texto) {
+	h3 {
+		font-family: $subtitulo;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #000;
+		padding-bottom: 15px;
+	}
+	ul {
+		margin-bottom: 50px;
+		li {
+			font-family: $texto;
+			font-size: 14px;
+			padding-bottom: 25px;
+		}
+		a {
+			text-decoration: none;
+			color: #666;
+		}
+	}
+}
+
